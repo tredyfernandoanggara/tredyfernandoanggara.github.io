@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Portfolio</title>
+	<link href="dist/img/profile/profile.png" rel="icon" type="image/x-icon" />
+	<!-- CSS -->
+	<!-- Bootstrap -->
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet" />
+	<!-- Main -->
+	<link href="dist/css/main.css" rel="stylesheet" />
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+	<!-- Toastr -->
+	<link href="plugins/toastr/toastr.min.css" rel="stylesheet" />
+	<!-- Menambahkan CDN untuk Summernote CSS -->
+	<link href="plugins/summernote/summernote-bs5.css" rel="stylesheet" />
+	<!-- Javascript -->
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!-- Boostrap -->
+	<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Toastr -->
+	<script src="plugins/toastr/toastr.min.js"></script>
+	<!-- Menambahkan CDN untuk Summernote JS -->
+	<script src="plugins/summernote/summernote-bs5.js"></script>
+	<script src="dist/js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#summernote").summernote();
+		});
+	</script>
+	<script>
+		toastr.options = {
+			closeButton: false,
+
+			debug: false,
+
+			newestOnTop: false,
+
+			progressBar: true,
+
+			positionClass: "toast-top-right",
+
+			preventDuplicates: true,
+
+			onclick: null,
+
+			showDuration: "300",
+
+			hideDuration: "1000",
+
+			timeOut: "1000",
+
+			extendedTimeOut: "1000",
+
+			showEasing: "swing",
+
+			hideEasing: "linear",
+
+			showMethod: "fadeIn",
+
+			hideMethod: "fadeOut",
+		};
+	</script>
+</head>
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
+	<ul class="navbar-nav m-auto">
+		<li class="nav-item active">
+			<a class="nav-link" href="#about"> About </a>
+		</li>
+		<li class="nav-item active">
+			<a class="nav-link" href="#skills"> Skills </a>
+		</li>
+		<li class="nav-item active">
+			<a class="nav-link" href="#portfolio"> Portofolio </a>
+		</li>
+		<li class="nav-item active">
+			<a class="nav-link" href="#contact"> Contact </a>
+		</li>
+	</ul>
+</nav>
+<!-- Profile -->
+<section class="about" id="about">
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center text-center">
+			<div class="col-4">
+				<img class="profile-img rounded-circle" src="dist/img/profile/profile.png" />
+			</div>
+			<!-- Profile Image -->
+			<div class="col-md-6">
+				<div class="mb-3">
+					<h1 class="text-primary">T. Redy Fernando Anggara</h1>
+					<h3 class="text-title">Web Developer &amp; Artifical Intelligence</h3>
+				</div>
+				<div class="mb-5">
+					<a class="btn btn-primary" href="#portfolio"> View My Portfolio </a>
+				</div>
+				<p class="text-justify">
+					Saya adalah lulusan Sarjana Teknik Informatika dari Universitas Lancang Kuning dengan IPK 3,48, menyelesaikan studi dalam waktu 3,5 tahun. Selama masa studi, saya mengembangkan keahlian dalam pemrograman, pengembangan perangkat lunak, dan kecerdasan buatan (AI). Saya telah terlibat dalam
+					berbagai proyek Skripsi, termasuk pengembangan website serta penerapan teknik Machine Learning, Deep Learning, dan deteksi berbasis AI. Pengalaman ini memberikan saya pemahaman mendalam tentang teknologi terkini serta keterampilan adaptasi yang kuat dalam lingkungan kerja yang dinamis.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- MySkill -->
+<section class="skills" id="skills">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="text-title">My Skills</h2>
+		</div>
+		<div class="row d-flex justify-content-center">
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/python.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Python</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/php.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>PHP</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/javascript.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Javascript</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/html.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>HTML</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/css.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>CSS</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/codeigniter.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Codeigniter 4</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/flask.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Flask</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/mysql.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Mysql</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/bootstrap.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Bootstrap 5</h5>
+				</div>
+			</div>
+			<!-- Card -->
+			<div class="card card-custom bg-dark">
+				<!-- Img -->
+				<img alt="Python Logo" class="card-img" src="dist/img/program_language/django.png" />
+				<!-- Text -->
+				<div class="card-footer">
+					<h5>Django</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Portfolio -->
+<section class="portfolio" id="portfolio">
+	<div class="container">
+		<div class="section-header">
+			<h2 class="text-title">Portfolio</h2>
+		</div>
+		<!-- List -->
+		<ul class="portfolio-filters">
+			<li class="active" data-filter="*">All</li>
+			<li data-filter=".web-developer">Web Developer</li>
+			<li data-filter=".machine-learning">Machine Learning</li>
+			<li data-filter=".deep-learning">Deep Learning</li>
+		</ul>
+		<!-- Portfolio Tools -->
+		<div class="col-md-12 mb-3 portfolio-tools">
+			<div class="form-check">
+				<input class="form-check-input" id="check-item-show" type="checkbox" value="" />
+				<label class="form-check-label" for="check-item-show"> Show/Hide Detail </label>
+			</div>
+		</div>
+		<div class="portfolio-container row g-0">
+			<!-- Portfolio Item -->
+		</div>
+	</div>
+</section>
+<!-- Contact -->
+<section class="contact" id="contact">
+	<div class="container">
+		<div class="section-header">
+			<h2>Contact</h2>
+		</div>
+		<div class="mb-3">
+			<iframe
+				allowfullscreen=""
+				height="400px"
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.644986989445!2d101.47933327472357!3d0.5340767994607033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5adb57cc1b535%3A0xe11f0afd0f17df74!2sGg.%20Am%20I%2C%20Rejosari%2C%20Kec.%20Tenayan%20Raya%2C%20Kota%20Pekanbaru%2C%20Riau%2028141!5e0!3m2!1sid!2sid!4v1723585634907!5m2!1sid!2sid"
+				style="border: 0"
+				width="100%"
+			>
+			</iframe>
+		</div>
+		<div class="row gy-5 gx-lg-5">
+			<div class="col-lg-4">
+				<div class="d-flex">
+					<i class="bi bi-geo-alt flex-shrink-0"> </i>
+					<div>
+						<h4>Location:</h4>
+						<p>Gg. Am I No.1, Rejosari, Kec. Tenayan Raya, Kota Pekanbaru, Riau 28141</p>
+					</div>
+				</div>
+				<!-- End Info Item -->
+				<div class="d-flex">
+					<i class="bi bi-envelope flex-shrink-0"> </i>
+					<div>
+						<h4>Email:</h4>
+						<p>keyline990@gmail.com</p>
+					</div>
+				</div>
+				<!-- End Info Item -->
+				<div class="d-flex">
+					<i class="bi bi-phone flex-shrink-0"> </i>
+					<div>
+						<h4>Call:</h4>
+						<p>+62 852-7907-9418</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<form action="http://localhost:8080/send_email" id="form-email">
+					<input name="csrf_test_name" type="hidden" value="a4b21eee703a3c4c90202f2f0e471259" />
+					<div class="row">
+						<div class="col-md-6 form-group">
+							<input class="form-control" id="name" name="name" placeholder="Your Name" required="" type="text" />
+						</div>
+						<div class="col-md-6 form-group mt-3 mt-md-0">
+							<input class="form-control" id="email" name="email" placeholder="Your Email" required="" type="email" />
+						</div>
+					</div>
+					<div class="form-group mt-3">
+						<input class="form-control" id="subject" name="subject" placeholder="Subject" required="" type="text" />
+					</div>
+					<div class="form-group mt-3">
+						<textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
+					</div>
+					<div class="my-3 text-center">
+						<button class="btn btn-primary" type="submit">Send Message</button>
+					</div>
+					<div style="display: none">
+						<label> Fill This Field </label>
+						<input name="honeypot" type="text" value="" />
+					</div>
+				</form>
+			</div>
+			<!-- End Contact Form -->
+		</div>
+	</div>
+</section>
+<!-- Modal Portfolio -->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModal" tabindex="-1">
+	<div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+		<div class="modal-content bg-second">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="myModalLabel">Modal title</h1>
+				<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+			</div>
+			<div class="modal-body">...</div>
+			<div class="modal-footer">...</div>
+		</div>
+	</div>
+</div>
